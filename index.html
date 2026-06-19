@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Invasive Plants & Vegetables Defender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="instructionsPage">
+        <h1>🌍 Invasive Plants & Vegetables Defender</h1>
+        <p class="intro">Learn the rules before you play!</p>
+
+        <div class="instructions-grid">
+            <div class="instruction-card">
+                <div class="card-icon">🎯</div>
+                <h2>How to Play</h2>
+                <p>Choose a continent and you'll be taken to a 5×5 grid filled with plants. Your job is to identify and remove <strong>invasive plants</strong> while keeping the <strong>native plants</strong> alive. Use the tools at the bottom of the screen to remove plants from each cell. Clear all invasive plants to complete the continent!</p>
+            </div>
+            <div class="instruction-card">
+                <div class="card-icon">🌿</div>
+                <h2>Native vs Invasive</h2>
+                <p>Each cell contains either a <strong>native plant</strong> 🟢 or an <strong>invasive plant</strong> 🔴 — or it may be empty. Removing an invasive plant earns you <strong>+10 points</strong>. But if you accidentally remove a native plant, you lose a <strong>❤️ life</strong> and must answer a quiz question. Lose all 5 lives and you'll need to answer 5 questions to restore them!</p>
+            </div>
+            <div class="instruction-card">
+                <div class="card-icon">🧰</div>
+                <h2>Your Tools</h2>
+                <p>Select a tool from the toolbar at the bottom, then click a cell to use it. All tools remove whatever plant is in the cell — so choose carefully! You have five tools: <strong>🌿 Spray</strong>, <strong>⛏️ Hoe</strong>, <strong>🔥 Flame</strong>, <strong>🕸️ Net</strong>, and <strong>💧 Water</strong>. The selected tool glows gold.</p>
+            </div>
+        </div>
+
+        <button id="continueBtn1" class="continue-btn">Continue →</button>
+    </div>
+
+
+    <div id="infoPage">
+        <h1>📖 Plant & Tool Guide</h1>
+        <p class="intro">Know your plants — and your tools!</p>
+
+        <div class="info-scroll">
+
+
+            <div class="info-section">
+                <h2>🧰 What Each Tool Does</h2>
+                <div class="info-row">
+                    <div class="info-item">
+                        <span class="info-icon">🌿</span>
+                        <div>
+                            <strong>Spray</strong>
+                            <p>Chemical herbicide spray. Fast and effective at killing invasive plants on contact. Use carefully — it kills natives too.</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">⛏️</span>
+                        <div>
+                            <strong>Hoe</strong>
+                            <p>Digs out roots from the soil. Best for plants that spread underground. Removes the whole root system to stop regrowth.</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🔥</span>
+                        <div>
+                            <strong>Flame</strong>
+                            <p>Burns plants at the surface. Useful for dense invasive growth. Some native seeds need fire to germinate — use wisely!</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🕸️</span>
+                        <div>
+                            <strong>Net</strong>
+                            <p>Traps and removes plants without chemicals. Gentler method — good for areas near native plants you want to protect.</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💧</span>
+                        <div>
+                            <strong>Water</strong>
+                            <p>Floods the cell to drown shallow-rooted invasives. Also helps native plants recover after nearby invasives are removed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="info-section">
+                <h2>🌍 Plants by Continent</h2>
+                <div class="continent-info-grid">
+
+                    <div class="continent-info-card">
+                        <h3>🏔️ Antarctica</h3>
+                        <div class="plant-list">
+                            <div class="plant-entry native-entry"><span>🌱 🌿 🌿 🌱 🌺</span><div><strong>Natives:</strong>Seedling, Fern, Fern, Seedling, Hibiscus  .</div></div>
+                            <div class="plant-entry invasive-entry"><span>'🌵 🍄 🌾 🍄 🌸</span><div><strong>Invasives:</strong> Cactus, Red Mushroom, Wheat, Mushroom, Lotus.</div></div>
+                        </div>
+                    </div>
+
+                    <div class="continent-info-card">
+                        <h3>🇦🇺 Australia</h3>
+                        <div class="plant-list">
+                            <div class="plant-entry native-entry"><span>🌺 🍃 🌿 🍃 🌼</span><div><strong>Natives:</strong> Hibiscus, Leaf, Fern, Leaf, Sunflower.</div></div>
+                            <div class="plant-entry invasive-entry"><span>🌵 🌾 🍀 🌲 🌻</span><div><strong>Invasives:</strong> Cactus, Wheat, Clover, Christmas Tree, Sunflower</div></div>
+                        </div>
+                    </div>
+
+                    <div class="continent-info-card">
+                        <h3>🌍 Africa</h3>
+                        <div class="plant-list">
+                            <div class="plant-entry native-entry"><span>🍆 🌿 🍀 🌴 🌼</span><div><strong>Natives:</strong> Eggplant, Fern, Clover, Palm tree, Sunflower</div></div>
+                            <div class="plant-entry invasive-entry"><span>🌵 🌸 🍃 🌾 🌲</span><div><strong>Invasives:</strong> Cactus, Hibiscus, Leaf, Wheat, Christmas Tree </div></div>
+                        </div>
+                    </div>
+
+                    <div class="continent-info-card">
+                        <h3>🇪🇺 Europe</h3>
+                        <div class="plant-list">
+                            <div class="plant-entry native-entry"><span>🌿 🌸 🍄 🌲 🌼</span><div><strong>Natives:</strong> Fern, Hibiscus, Mushroom, Christmas Tree, Sunflower </div></div>
+                            <div class="plant-entry invasive-entry"><span>🌵 🌾 🌺 🍀</span><div><strong>Invasives:</strong> Cactus, Wheat, Hibiscus, Clover </div></div>
+                        </div>
+                    </div>
+
+                    <div class="continent-info-card">
+                        <h3>🇨🇳 Asia</h3>
+                        <div class="plant-list">
+                            <div class="plant-entry native-entry"><span>🎋 🌸 🍃 🌿 🎍</span><div><strong>Natives:</strong> Rose, Hibisucs, Leaf, Fern, Bamboo</div></div>
+                            <div class="plant-entry invasive-entry"><span>🌵 🌾 🌼 🍄 🌺</span><div><strong>Invasives:</strong> Cactus, Wheat, Sunflower, Mushroom, Hibisucs</div></div>
+                        </div>
+                    </div>
+
+                    <div class="continent-info-card">
+                        <h3>🇺🇸 North America</h3>
+                        <div class="plant-list">
+                            <div class="plant-entry native-entry"><span>🌲 🍁 🌻 🌼 🍄</span><div><strong>Natives:</strong> Christmas Tree, Maple Leaf, Sunflower, Daisy, Mushroom</div></div>
+                            <div class="plant-entry invasive-entry"><span>🌵 🎋 🌾 🌺 🌸</span><div><strong>Invasives:</strong> Cactus, Roses, Wheat, Hibiscus, Lotus</div></div>
+                        </div>
+                    </div>
+
+                    <div class="continent-info-card">
+                        <h3>🇧🇷 South America</h3>
+                        <div class="plant-list">
+                            <div class="plant-entry native-entry"><span>🌺 🌿 🍃 🌴 🌸</span><div><strong>Natives:</strong> Hibiscus, Fern, Leaf, Palm Tree, Lotus</div></div>
+                            <div class="plant-entry invasive-entry"><span>🌵 🌾 🍀 🌼 🌲</span><div><strong>Invasives:</strong> Cactus, Wheat, Clover, Daisy, Christmas Tree</div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="info-section">
+                <h2>❓ Q&A</h2>
+                <div class="qa-list">
+
+                    <div class="qa-entry">
+                        <div class="qa-q">What is a native plant?</div>
+                        <div class="qa-a">A native plant is a plant that naturally grows in a certain area without being brought there by people.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">What is an invasive plant?</div>
+                        <div class="qa-a">An invasive plant is a plant that has been introduced to an area and spreads quickly, often causing harm.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">How can you tell if a plant is native or invasive?</div>
+                        <div class="qa-a">You can check whether the plant originally came from that area and whether it is growing naturally or taking over other plants.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">Why can invasive plants be a problem?</div>
+                        <div class="qa-a">They can spread fast, crowd out native plants, and change habitats.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">Why are native plants important?</div>
+                        <div class="qa-a">They provide food and shelter for local animals and help keep ecosystems balanced.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">Can a plant be native in one country but invasive in another?</div>
+                        <div class="qa-a">Yes. A plant may be native in one place but invasive when introduced somewhere else.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">What happens when invasive plants take over an area?</div>
+                        <div class="qa-a">They can reduce biodiversity by pushing out other plant species.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">How do invasive plants usually spread to new places?</div>
+                        <div class="qa-a">They can spread by people, animals, wind, water, or vehicles.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">What is biodiversity?</div>
+                        <div class="qa-a">Biodiversity means having many different kinds of living things in one area.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">Why do native animals often depend on native plants?</div>
+                        <div class="qa-a">Native animals may use native plants for food, shelter, and breeding places.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">What is one sign that a plant might be invasive?</div>
+                        <div class="qa-a">It spreads very quickly and grows over large areas fast.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">Are all non-native plants invasive?</div>
+                        <div class="qa-a">No. Some non-native plants do not cause harm and are not invasive.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">Why might humans plant species from other continents?</div>
+                        <div class="qa-a">For gardens, food, farming, or decoration.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">What is one way to protect native plants?</div>
+                        <div class="qa-a">Do not plant invasive species and remove them when needed.</div>
+                    </div>
+
+                    <div class="qa-entry">
+                        <div class="qa-q">Why is it important to learn about invasive and native plants around the world?</div>
+                        <div class="qa-a">It helps us protect ecosystems and understand how plants affect environments in different continents.</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button id="backToHowToPlay" class="back-btn">← How to Play</button>
+        <button id="continueBtn2" class="continue-btn">Continue →</button>
+    </div>
+
+
+    <div id="mainMenu">
+        <h1>🌍 Invasive Plants & Vegetables Defender</h1>
+        <div class="continent-grid">
+            <button class="continent-btn" data-level="1">🏔️ Antarctica</button>
+            <button class="continent-btn" data-level="2">🇦🇺 Australia</button>
+            <button class="continent-btn" data-level="3">🌍 Africa</button>
+            <button class="continent-btn" data-level="4">🇪🇺 Europe</button>
+            <button class="continent-btn" data-level="5">🇨🇳 Asia</button>
+            <button class="continent-btn" data-level="6">🇺🇸 North America</button>
+            <button class="continent-btn" data-level="7">🇧🇷 South America</button>
+        </div>
+        <p>Choose your starting continent!</p>
+    </div>
+
+    <div id="gameContainer">
+        <div class="continent-bg" id="bg1"></div>
+        <div class="continent-bg" id="bg2"></div>
+        <div class="continent-bg" id="bg3"></div>
+        <div class="continent-bg" id="bg4"></div>
+        <div class="continent-bg" id="bg5"></div>
+        <div class="continent-bg" id="bg6"></div>
+        <div class="continent-bg" id="bg7"></div>
+
+        <div id="uiTop">
+            <button id="backBtn">← Menu</button>
+            <button id="infoBtn">📖 Info</button>
+            <div class="stat"><div>🌍 Continent</div><div class="stat-value" id="continentName">-</div></div>
+            <div class="stat"><div>❤️ Lives</div><div class="stat-value" id="lives">5</div></div>
+            <div class="stat"><div>⭐ Score</div><div class="stat-value" id="score">0</div></div>
+            <div class="stat"><div>❌ Native Kills</div><div class="stat-value" id="nativeKills">0</div></div>
+        </div>
+
+        <div id="gameGrid"></div>
+
+        <div id="toolbar">
+            <button id="sprayBtn"  class="tool-btn selected" data-tool="spray">🌿<br><span class="tool-name">Spray</span></button>
+            <button id="hoeBtn"    class="tool-btn" data-tool="hoe">⛏️<br><span class="tool-name">Hoe</span></button>
+            <button id="flameBtn"  class="tool-btn" data-tool="flame">🔥<br><span class="tool-name">Flame</span></button>
+            <button id="netBtn"    class="tool-btn" data-tool="net">🕸️<br><span class="tool-name">Net</span></button>
+            <button id="waterBtn"  class="tool-btn" data-tool="water">💧<br><span class="tool-name">Water</span></button>
+        </div>
+    </div>
+
+    <div id="quizOverlay">
+        <div id="quizTitle">🌿 Quiz!</div>
+        <div id="quizProgress"></div>
+        <div id="quizText"></div>
+        <input type="text" id="quizAnswer" placeholder="Type your answer..." autocomplete="off">
+        <button id="submitQuiz">✅ Submit</button>
+        <div id="quizFeedback"></div>
+        <button id="quizInfoBtn">📖 View Plant Info</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
